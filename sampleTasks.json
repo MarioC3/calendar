@@ -1,0 +1,38 @@
+{
+  "Tasks": [{
+      "name": "Meeting with boss",
+      "startingTime": "10:00 am",
+      "duration": "30 minutes",
+      "place": "UVU",
+      "notes": "don't be late"
+    },
+    {
+      "name": "Dinner with wife",
+      "startingTime": "7:00 pm",
+      "duration": "60 minutes",
+      "place": "La Carreta Restaurant",
+      "notes": "Bring Flowers"
+    },
+    {
+      "name": "Coding Assignment deadline",
+      "startingTime": "12:00 am",
+      "duration": "No duration",
+      "place": "UVU",
+      "notes": "Submit the Homework"
+    },
+    {
+      "name": "CS 2550 Class",
+      "startingTime": "12:00 am",
+      "duration": "30 minutes",
+      "place": "UVU",
+      "notes": "don't be late"
+    },
+    {
+      "name": "Doctor Appointment",
+      "startingTime": "4:00 pm",
+      "duration": "60 minutes",
+      "place": "Orem Hospital",
+      "notes": "don't be late"
+    }
+  ]
+}

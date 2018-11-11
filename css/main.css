@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: #495867;
+}
+
+p, li {
+    line-height: 145%;
+    font-weight: 300;
+}
+
+div.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    position: relative;
+}
+.signInContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.signInContainer img{
+    width: 100px;
+    margin-top: 20px;
+}
+
+.formElementsContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.formElementsContainer input{
+    width: 350px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin: 5px 0 10px;
+    padding: 5px;
+}
+
+.confirmationMessage{
+    margin-bottom: 20px;
+    color: red;
+}
+
+.timeStamp {
+    margin-bottom: 5px;
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.clearLocal {
+    padding: 0 5px;
+}
+
+header{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+header h5{
+    font-weight: 100;
+    color: gray;
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a{
+    font-weight: 100;
+    text-decoration: none;
+    color: gray;
+    margin-left: 10px;
+}
+
+nav .current h5{
+    color: orangered;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+nav a h5:hover{
+    color: orangered;
+}
+
+div.contentWrapper {
+    max-width: 700px;
+    padding: 10px;
+    /* border: .5px solid lightgray; */
+    margin: 10px 10px 40px 10px;
+    /* border-radius: 5px; */
+    /* box-shadow: 2px 4px 49px -4px rgba(0, 0, 0, 0.15); */
+}
+
+div.contentWrapper h1 {
+    color: #212121;
+}
+
+div.contentWrapper a {
+    color: orangered;    
+}
+
+div.info {
+    margin-bottom: 40px;
+}
+
+div.info h5{
+    font-weight: 100;
+    color: gray;
+    margin: 0;
+    text-align: center;
+}
+
+/* Grid Page */
+div.gridWrapper {
+    margin: 10px 10px 20px 10px;
+    width: 70%;
+    padding: 10px;
+    /* box-shadow: 2px 4px 49px -4px rgba(0, 0, 0, 0.15); */
+}
+
+div.heroInGrid{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+div.heroInGrid a{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+div.heroInGrid h1{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 8px;
+}
+
+.heroInGrid:hover .chevron {
+  opacity: 1;
+}
+
+.chevron {
+  position: absolute;
+  transition: all 0.5s ease-out;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.left{
+  left: 20px;
+}
+
+.right{
+  right: 20px;
+}
+
+.table {
+    width: 100%;
+    border: solid 1pt lightgray;
+    border-collapse: collapse;
+}
+
+tr.weeks{
+    height: 100px;
+}
+
+th{
+    border: solid 1pt lightgray;
+    height: 50px;
+}
+
+/* th h4{
+    margin-top: 20px;
+} */
+
+td.days {
+    border: solid 1pt lightgray;
+    position: relative;
+    width: 14.28%;
+}
+
+div.dayContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-bottom: 5px;
+}
+
+div.tasksNumberContainer {
+    color: #495867;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+
+}
+
+div.currentDay{
+   padding: 5px;
+   background: #FE5F55; 
+   color: white;
+   border-radius: 50%;
+   width: 10px;
+   height: 10px;
+   font-weight: 600;
+}
+
+div.stateContent{
+    width: 500px;
+    background: linear-gradient(#000000, #434343);
+    padding: 40px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+div.stateContent h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.grayedOut{
+    background: rgb(245, 245, 245);
+}
+
+.button {
+    background: #FE5F55;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttonLink{
+    text-decoration: none;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 33px -6px rgba(0,0,0,0.36);
+}
+
+.isDay{
+    cursor: pointer;
+}
+
+/* modal */
+.modal {
+    display: block;
+}
+
+.dayViewContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: .8;
+}
+
+.dayView{
+    box-sizing: border-box;
+    background: white;
+    width: 700px;
+    height: 700px;
+    border-radius: 10px;
+    border: .5px solid lightgray;
+    padding: 20px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+}
+
+.dayName {
+    grid-column: span 4;
+}
+
+.tasksContainer {
+    grid-column: span 2;
+    height: 100%;
+    overflow: scroll;
+    padding-right: 20px;
+}
+
+.individualTask {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #F0F0F0;
+	box-sizing: border-box;
+    box-shadow: 10px 12px 25px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.taskDetailsContainer {
+    grid-column: span 2;
+}
+
+/* things for asignment 4 */
+
+.assignment4 {
+    margin: 50px 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+}
+
+.coordinatesWrapper {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: .5px solid lightgray;
+}
+
+.coordinates{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    background: #d3ffe9;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.cardCreator {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cardCreator p {
+    margin-bottom: 20px;
+}
+
+.formWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.textInputWrapper  input {
+    margin-bottom: 10px;
+}
+
+.cardCreator button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+.taskCardContainer {
+    width: 100%;
+}
+
+.taskCard {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #F0F0F0;
+	box-sizing: border-box;
+    box-shadow: 10px 12px 25px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    text-align: left;
+}
+
+.progressBarContainer {
+    margin-top: 10px;
+    width: 100%;
+    height: 15px;
+    border: .5px solid lightgray;
+}
+
+.progressBar{
+    width: 65%;
+    height: 100%;
+    background: #00BA00;
+}
+
+/* mobile  */
+
+@media only screen and (max-width: 768px) {
+    div.tableGridContainer table {
+        border: none;
+        border-collapse: collapse;
+    }
+
+    th {
+        border: none;
+    }
+
+    td.days {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    th h4{
+        font-size: 10px;
+    }
+
+    div.stateContent pre{
+        font-size: 8px;
+    }
+
+    div.gridWrapper {
+        width: 90%;
+    }
+
+    div.stateContent {
+        width: 80%;
+    }
+}
